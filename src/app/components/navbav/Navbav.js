@@ -77,9 +77,20 @@ const Navbav = () => {
             )}
             <div className={`md:hidden ${showNav ? "pb-4 px-5" : "h-0 invisible opacity-0"}`} >
                 <ul className='flex flex-col text-[15px] opacity-75 px-2'>
-                    <li> <Link href='/shop' className='py-3 inline-block w-full'>Shop</Link> </li>
-                    <li> <Link href='/filters' className='py-3 inline-block w-full'>filters</Link> </li>
-                    <li> <Link href='/myproducts' className='py-3 inline-block w-full'>My products</Link> </li>
+                <li >
+                                <Link href='/' className='py-3 inline-block w-full'>Home</Link>
+                            </li>
+
+                            <li >
+                                <Link href='/allproduct' className='py-3 inline-block w-full'>Sản Phẩm </Link>
+                            </li>
+
+                            <li >
+                                <Link href='/new' className='py-3 inline-block w-full'>Tin tức  </Link>
+                            </li>
+                            <li >
+                                <Link href='/contacts' className='py-3 inline-block w-full'>Liên hệ   </Link>
+                            </li>
                 </ul>
                 <div className='flex item-center bg-gray-100 p-2 rounded-lg my-4 py-3'>
                     <input
